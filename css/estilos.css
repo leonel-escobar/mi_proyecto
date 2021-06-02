@@ -217,31 +217,6 @@ p {
     width: 100%;
     border-radius: 2px; }
 
-.catalogo {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-bottom: 40px; }
-  .catalogo__producto {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 15px 0; }
-    .catalogo__producto h3 {
-      font-size: 16px;
-      font-weight: 600; }
-    .catalogo__producto p {
-      font-size: 14px; }
-    .catalogo__producto img {
-      width: 245px; }
-    .catalogo__producto img:hover {
-      transition: opacity 300ms;
-      opacity: 80%; }
-    .catalogo__producto .puntuacion {
-      margin: 15px 0; }
-      .catalogo__producto .puntuacion .checked {
-        color: orange; }
-
 #myBtnContainer {
   display: flex;
   justify-content: space-evenly;
@@ -269,7 +244,7 @@ p {
   #myBtnContainer form button {
     color: #fff;
     border: none;
-    padding: .550rem .75rem;
+    padding: .475rem .75rem;
     border-radius: 6px;
     background-color: #3898ec; }
 
@@ -280,6 +255,31 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
+
+.catalogo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+  .catalogo__producto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0; }
+    .catalogo__producto h3 {
+      font-size: 16px;
+      font-weight: 600; }
+    .catalogo__producto p {
+      font-size: 14px; }
+    .catalogo__producto img {
+      width: 245px; }
+    .catalogo__producto img:hover {
+      transition: opacity 300ms;
+      opacity: 80%; }
+    .catalogo__producto .puntuacion {
+      margin: 15px 0; }
+      .catalogo__producto .puntuacion .checked {
+        color: orange; }
 
 .servicios {
   display: flex;
@@ -495,7 +495,7 @@ p {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .principal {
-    margin: 40px 0; }
+    margin-bottom: 40px; }
     .principal__texto h1 {
       font-size: 32px;
       font-weight: 700; }
@@ -513,6 +513,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .destacados .tarjeta {
+      margin-top: 10px; }
   .descuentos {
     background-color: #e7e7e7;
     width: 100%;
@@ -560,11 +562,18 @@ p {
   #myBtnContainer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly; }
+    justify-content: space-around; }
     #myBtnContainer button {
       padding: 10px 20px; }
+    #myBtnContainer form input {
+      margin-top: 6px; }
   .catalogo__producto img {
     width: 200px; }
+  .servicios__descripcion:not(:last-of-type) {
+    margin-bottom: 40px; }
+  .videoDeServicios iframe {
+    width: 100%;
+    padding: 0 20px; }
   .nosotrosPie {
     flex-flow: column wrap;
     width: 100%;
