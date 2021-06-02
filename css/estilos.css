@@ -217,6 +217,31 @@ p {
     width: 100%;
     border-radius: 2px; }
 
+.catalogo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+  .catalogo__producto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0; }
+    .catalogo__producto h3 {
+      font-size: 16px;
+      font-weight: 600; }
+    .catalogo__producto p {
+      font-size: 14px; }
+    .catalogo__producto img {
+      width: 245px; }
+    .catalogo__producto img:hover {
+      transition: opacity 300ms;
+      opacity: 80%; }
+    .catalogo__producto .puntuacion {
+      margin: 15px 0; }
+      .catalogo__producto .puntuacion .checked {
+        color: orange; }
+
 #myBtnContainer {
   display: flex;
   justify-content: space-evenly;
@@ -255,31 +280,6 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
-
-.catalogo {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-bottom: 40px; }
-  .catalogo__producto {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 15px 0; }
-    .catalogo__producto h3 {
-      font-size: 16px;
-      font-weight: 600; }
-    .catalogo__producto p {
-      font-size: 14px; }
-    .catalogo__producto img {
-      width: 245px; }
-    .catalogo__producto img:hover {
-      transition: opacity 300ms;
-      opacity: 80%; }
-    .catalogo__producto .puntuacion {
-      margin: 15px 0; }
-      .catalogo__producto .puntuacion .checked {
-        color: orange; }
 
 .servicios {
   display: flex;
