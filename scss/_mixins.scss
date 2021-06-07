@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin bordes {
+    border: #e1e1e1 solid 1px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin inputborde {
+    text-indent: 6px;
+    border: #ccc solid 1px;
+    border-radius: 6px;
+}
+
+@mixin opacity-hover {
+    transition: opacity 300ms;
+    opacity: 80%;
+}
+
+@mixin gradient-azul {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #007ac3 74%);
+}
+
+@mixin condicional($color){
+    background-color: ($color);
+
+    @if $color == #fff {
+        border: 1px solid;
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+// Estilos del header
+.header {
+
+    &__nav {
+        background-color: $color-negro;
+
+        .logo {
+            width: 125px;
+        }
+    }
+}

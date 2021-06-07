@@ -1,0 +1,102 @@
+@import "variables";
+@import "components";
+
+// Estilos del footer
+.footer {
+    color: #fff;
+    background-color: $color-negro;
+    
+    &__arriba {
+        padding: 60px;
+    }
+
+    &__newsletter {
+        padding-bottom: 2.75rem;
+        color: #888582;
+            
+        h3 {
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        input {
+            height: 2.813rem;
+            width: 40%;
+            text-indent: 1.25rem;
+            color: #333;
+            border: none;
+        }
+        
+        button {
+            background: #545454;
+            border: none;
+            color: #fff;
+            height: 45px;
+            padding: 0 14px;
+            border: none;
+        }
+                
+        button:hover {
+            background-color: #007ac3;
+        }
+    }
+
+    &__redes {
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 50px;
+        border-bottom: #545454 solid 1px;
+
+        a {
+            font-size: 0.875rem;
+            padding: 10px;
+            text-decoration: none;
+            color: rgba(255,255,255,.55);
+            border-radius: 2px;
+        }
+
+        a:hover {
+            color: #ced4da;
+        }
+    }
+
+    &__secciones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding-top: 50px;
+
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+
+            a {
+                color: rgba(255,255,255,.55);
+                margin-right: 30px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #ced4da;
+            }
+        }
+    }
+
+    &__copyright {
+        font-size: 14px;
+        text-align: center;
+
+        .logo {
+            width: 125px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            color: rgba(255,255,255,.55);
+            padding-bottom: 12px;
+            margin-bottom: 0;
+        }
+    }
+}

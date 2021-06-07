@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+
+// Botones
+.boton {
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 12px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    transition: opacity 600ms;
+    opacity: 80%;
+}
+
+.boton--primario {
+    margin-bottom: 20px;
+    border: $boton-azul;
+    background-color: $boton-azul;
+}
+
+.boton--secundario {
+    border: $boton-gris;
+    background-color: $boton-gris;
+}
+
+.boton--verde {
+    border: $boton-verde;
+    background-color: $boton-verde;
+}
+
+.boton--negro {
+    color: $color-blanco;
+    border: $color-negro;
+    background-color: $color-negro;
+}
+
+// Tarjetas de productos
+.tarjeta {
+    background-color: #fff;
+    @include bordes;
+}
+
+.tarjeta--destacado {
+    width: 260px;
+    text-align: center;
+}
+
+.tarjeta--catalogo {
+    width: 530px;
+    height: 250px;
+}

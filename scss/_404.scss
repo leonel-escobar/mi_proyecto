@@ -1,0 +1,28 @@
+.error {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    &__imagen {
+        img {
+            width: 320px;
+            margin: 40px;
+        }
+    }
+
+    &__texto {
+        line-height: 2;
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+}

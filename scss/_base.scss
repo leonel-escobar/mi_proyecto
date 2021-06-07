@@ -1,0 +1,70 @@
+@import "variables";
+
+// Reset de valores
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 56px;
+    font-family: $fuente-principal;
+    background-color: #f6f6f6;
+}
+
+.container {
+    max-width: 1116px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Título de sección 
+.tituloDeSeccion {
+    font-size: 26px;
+    font-weight: 400;
+    color: $color-celeste;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    border-bottom: #dfdfdf solid 1px;
+}
+
+.tituloDeSeccion::before {
+    background: $color-celeste;
+    content: "";
+    display: block;
+    height: 5px;
+    position: relative;
+    top: 52px;
+    width: 80px;
+}
+
+@for $i from 1 through 5 {
+    .caja-#{$i} {
+        width: $i * 30%;
+    }
+}
+
+$color: negro;
+
+p {
+    @if ($color == negro) {
+        color: #262626;
+    } @else {
+        color: #111;
+    }
+}

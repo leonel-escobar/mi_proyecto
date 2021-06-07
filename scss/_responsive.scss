@@ -1,0 +1,309 @@
+@import "variables";
+@import "mixins";
+
+// Estilos para celular
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
+    // Primera seccion de la página principal
+    .principal {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 0;
+
+        &__texto {
+            
+            h1 {
+                font-size: 32px;
+                font-weight: 700;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            button {
+                margin-top: 12px;
+            }
+        }
+
+        &__imagen {
+            img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    // Beneficios
+    .beneficios {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+
+        &__item:not(:last-of-type) {
+            margin-bottom: 15px;
+        }
+    }
+
+    // Productos destacados
+    .destacados {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tarjeta {
+            margin-top: 10px;
+        }
+    }
+
+    // Descuentos
+    .descuentos {
+        background-color: #e7e7e7;
+        width: 100%;
+        height: 250px;
+
+        &__imagen {
+            img {
+                opacity: 0%;
+                }
+        }
+
+        &__texto {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+
+    // Botón de Whatsapp
+    .float{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+    }
+
+    // Marcas 
+    .marcas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__lista {
+        flex-direction: column;
+        align-items: center;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    // Footer
+    .footer {
+
+        &__arriba {
+            padding: 25px;
+        }
+
+        &__newsletter {
+
+            h3 {
+                font-size: 15px;
+            }
+
+            input {
+                width: 280px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__redes {
+            justify-content: center;
+        }
+
+        &__secciones {
+            ul {
+                justify-content: space-evenly;
+                padding: 0 35px;
+
+                a {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    // Seccion equipos
+    .equipos {
+        padding-top: 0;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+
+        &__descripcion {
+            
+            p {
+                margin: 0;
+            }
+
+            button {
+                margin-top: 12px;
+            }
+        }
+
+        &__imagen {
+            img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .menuCategorias {
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin-top: 10px;
+        }
+        
+        #myBtnContainer {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 15px;
+            margin: 0;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+    }
+        
+    .catalogo {
+
+        &__producto {
+            
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+    // Sección servicios
+    .servicios{
+        
+        &__descripcion:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .videoDeServicios {
+        iframe {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+    // Seccion nosotros
+    .nosotrosCont {
+        width: 100%;
+        height: 500px;
+    }
+
+    .nosotrosPie {
+        flex-flow: column wrap;
+        
+        padding: 10px;
+
+        &__texto {
+            width: 100%;
+        }
+
+        &__imagen {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px;
+        grid-template-areas: "formulario" 
+                            "informacion";
+        padding: 20px 0;
+
+        &__formulario {
+            grid-area: "formulario";
+            padding: 20px;
+            width: 100%;
+        }
+    }
+
+}
+
+// Estilos para tablet
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .beneficios {
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__item {
+            margin-top: 20px;
+        }
+    }
+
+    .destacados {
+        justify-content: space-evenly;
+
+        .tarjeta {
+            margin-top: 20px;
+        }
+    }
+
+    .descuentos {
+
+        &__texto {
+            position: absolute;
+            left: 360px;
+            top: 0px;
+            text-align: center;
+            padding: 20px;
+
+            p {
+                padding-left: 60px;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: right;
+            }
+        }
+    }
+
+    .menuCategorias {
+        justify-content: center;
+
+        p {
+            margin-top: 10px;
+        }
+
+        #myBtnContainer {
+            margin: 10px 0;
+        }
+    }
+
+    .catalogo {
+        justify-content: center;
+    }
+
+    .footer {
+
+        &__arriba {
+            padding: 30px;
+        }
+    }
+
+}
