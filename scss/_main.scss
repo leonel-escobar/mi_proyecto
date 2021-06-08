@@ -1,6 +1,13 @@
 @import "variables";
 @import "mixins";
 
+.carousel-item {
+    img {
+        height: 100vh;
+        object-fit: cover;
+        object-position: center bottom;
+    }
+}
 
 .principal {
     padding: 80px 0;
