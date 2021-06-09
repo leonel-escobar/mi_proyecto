@@ -12,6 +12,25 @@
             object-fit: cover;
             object-position: center;
         }
+
+        .carousel-caption {
+            height: 100%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            padding-top: 75px;
+            margin-bottom: 0;
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.3);
+    
+            p {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #fff;
+                padding: 20px 50px;
+                margin: 0;
+            }
+        }
     }
 
     // Primera seccion de la página principal

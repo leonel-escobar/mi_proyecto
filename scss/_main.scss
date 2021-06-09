@@ -1,11 +1,25 @@
 @import "variables";
 @import "mixins";
 
+// Carrusel
 .carousel-item {
     img {
         height: 100vh;
         object-fit: cover;
         object-position: center bottom;
+    }
+
+    .carousel-caption {
+        right: 25%;
+        left: 25%;
+        margin-bottom: 50px;
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.3);
+
+        p {
+            font-size: 1.2rem;
+            color: #fff;
+        }
     }
 }
 
@@ -235,7 +249,7 @@
 
     p {
         font-weight: 600;
-        margin: 0 20px;
+        margin: 0 20px 0 40px;
     }
 
     #myBtnContainer {
