@@ -22,11 +22,14 @@
         }
         
         input {
-            height: 2.813rem;
+            height: 2.720rem;
             width: 40%;
             text-indent: 1.25rem;
-            color: #333;
+            color: #fff;
             border: none;
+            border-radius: 6px;
+            background-color: #fff;
+            border-bottom: #fff solid 1px;
         }
         
         button {
@@ -36,6 +39,7 @@
             height: 45px;
             padding: 0 14px;
             border: none;
+            border-radius: 6px;
         }
                 
         button:hover {
@@ -46,14 +50,18 @@
     &__redes {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         padding-bottom: 50px;
         border-bottom: #545454 solid 1px;
 
+        div {
+            margin: 0 10px;
+        }
+
         a {
-            font-size: 0.875rem;
             padding: 10px;
             text-decoration: none;
-            color: rgba(255,255,255,.55);
+            color: #888582;
             border-radius: 2px;
         }
 

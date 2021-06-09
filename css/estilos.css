@@ -436,30 +436,36 @@ p {
       margin-bottom: 20px;
       color: #fff; }
     .footer__newsletter input {
-      height: 2.813rem;
+      height: 2.720rem;
       width: 40%;
       text-indent: 1.25rem;
-      color: #333;
-      border: none; }
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      background-color: #fff;
+      border-bottom: #fff solid 1px; }
     .footer__newsletter button {
       background: #545454;
       border: none;
       color: #fff;
       height: 45px;
       padding: 0 14px;
-      border: none; }
+      border: none;
+      border-radius: 6px; }
     .footer__newsletter button:hover {
       background-color: #007ac3; }
   .footer__redes {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     padding-bottom: 50px;
     border-bottom: #545454 solid 1px; }
+    .footer__redes div {
+      margin: 0 10px; }
     .footer__redes a {
-      font-size: 0.875rem;
       padding: 10px;
       text-decoration: none;
-      color: rgba(255, 255, 255, 0.55);
+      color: #888582;
       border-radius: 2px; }
     .footer__redes a:hover {
       color: #ced4da; }
@@ -570,6 +576,8 @@ p {
     margin-bottom: 10px; }
   .footer__redes {
     justify-content: center; }
+    .footer__redes div {
+      margin: 0; }
   .footer__secciones ul {
     justify-content: space-evenly;
     padding: 0 35px; }
