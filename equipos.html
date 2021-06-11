@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Mi hoja de estilos -->
     <link rel="stylesheet" href="css/estilos.css">
-    <!-- Script del catálogo -->
-    <script src="js/catalogo.js"></script>
     <title>Equipos - Sintagma</title>
 </head>
 <body>
@@ -47,7 +45,6 @@
 
     <main>
         <div class="container">
-            
             <h1 class="tituloDeSeccion">Nuestros equipos</h1>
 
             <div class="equipos row">
@@ -72,7 +69,7 @@
                     </p>
                 </div>
                 <div id="myBtnContainer">
-                    <button class="boton boton--negro" onclick="filterSelection('all')"> Mostrar todo</button>
+                    <button class="boton boton--secundario active" onclick="filterSelection('all')"> Mostrar todo</button>
                     <button class="boton boton--secundario" onclick="filterSelection('camaras')"> Cámaras</button>
                     <button class="boton boton--secundario" onclick="filterSelection('lentes')"> Lentes</button>
                     <button class="boton boton--secundario" onclick="filterSelection('luces')"> Luces</button>
@@ -84,7 +81,7 @@
             <div class="catalogo">
 
                 <!-- Cámaras -->
-                <div class="catalogo__producto tarjeta tarjeta--catalogo filterDiv show camaras">
+                <div class="catalogo__producto tarjeta tarjeta--catalogo filterDiv mostrar camaras">
                     <div>
                         <img src="images/alexamini.jpg" alt="">
                     </div>
@@ -491,6 +488,9 @@
         </div>
     </footer>
 
+    <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Script del catálogo -->
+    <script src="js/catalogo.js"></script>
 </body>
 </html>

@@ -279,11 +279,14 @@ p {
     align-items: center;
     padding: 10px 0;
     margin: 10px 0; }
-    .menuCategorias #myBtnContainer button {
+    .menuCategorias #myBtnContainer .boton {
       font-weight: 600;
       font-size: 14px; }
-    .menuCategorias #myBtnContainer button:not(:last-of-type) {
+    .menuCategorias #myBtnContainer .boton:not(:last-of-type) {
       margin-right: 10px; }
+    .menuCategorias #myBtnContainer .boton.active {
+      color: #fff;
+      background-color: #111; }
 
 .filterDiv {
   display: none; }
