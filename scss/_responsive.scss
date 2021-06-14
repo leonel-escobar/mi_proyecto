@@ -240,6 +240,38 @@
     }
 
     // Seccion nosotros
+    .nosotros {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin: 20px 0;
+    
+        &__imagen {
+            img {
+                width: 100%;
+                border-radius: 6px;
+                margin-bottom: 40px;
+            }
+        }
+    
+        &__texto {
+            width: 100%;
+    
+            p {
+                padding: 0 20px;
+                margin: 0;
+            }
+        }
+    }
+
+    .nosotrosParrafo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        padding: 20px 0;
+        margin: 40px;
+        color: #262626;
+    }
+
     .nosotrosCont {
         width: 100%;
         height: 500px;
@@ -247,7 +279,6 @@
 
     .nosotrosPie {
         flex-flow: column wrap;
-        
         padding: 10px;
 
         &__texto {
@@ -268,11 +299,18 @@
         grid-template-areas: "formulario" 
                             "informacion";
         padding: 20px 0;
+        margin-top: 20px;
 
         &__formulario {
             grid-area: "formulario";
-            padding: 20px;
+            padding:0 20px;
             width: 100%;
+        }
+
+        &__informacion {
+            .infoHorarios {
+                width: 100%;
+            }
         }
     }
 
@@ -346,6 +384,69 @@
         justify-content: center;
     }
 
+    // Sección servicios 
+    .servicios {
+        justify-content: space-evenly;
+        &__descripcion {
+            margin-top: 20px;
+        }
+    }
+
+    // Seccion nosotros
+    .nosotros {
+        &__imagen {
+                img {
+                    width: 350px;
+                }
+        }
+        &__texto {
+            width: 45%;
+            padding: 0 20px;
+        }
+    }
+    
+    .nosotrosParrafo {
+        padding: 0 30px 80px 30px;
+        
+    }
+
+    .nosotrosCont {
+        width: 100%;
+        height: 400px;
+    }
+
+    .nosotrosPie {
+        height: auto;
+        padding: 10px;
+
+        &__texto {
+            width: 50%;
+        }
+
+        &__imagen {
+            img {
+                width: 350px;
+                padding: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    // Contacto
+    .contacto {
+        &__formulario {
+            padding: 0 20px;
+        }
+
+        &__informacion {
+            .infoHorarios {
+                width: 285px;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    // Footer
     .footer {
 
         &__arriba {

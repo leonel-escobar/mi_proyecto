@@ -51,7 +51,10 @@ a {
     position: relative;
     top: 52px;
     width: 80px;
-    border-top-right-radius: 6px;
+}
+
+.textoCentrado {
+    text-align: center;
 }
 
 @for $i from 1 through 5 {

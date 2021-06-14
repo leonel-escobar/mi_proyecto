@@ -38,8 +38,10 @@ a {
   height: 5px;
   position: relative;
   top: 52px;
-  width: 80px;
-  border-top-right-radius: 6px; }
+  width: 80px; }
+
+.textoCentrado {
+  text-align: center; }
 
 .caja-1 {
   width: 30%; }
@@ -330,13 +332,38 @@ p {
   .videoDeServicios iframe {
     border-radius: 6px; }
 
-.nosotros__texto {
-  padding: 40px 20px 80px; }
-  .nosotros__texto p {
-    margin: 0; }
+.nosotros {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 80px 0; }
+  .nosotros__imagen img {
+    width: 500px;
+    border-radius: 6px; }
+  .nosotros__texto {
+    width: 480px; }
+    .nosotros__texto p {
+      margin: 0; }
+
+.nosotrosParrafo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  padding: 0 200px 80px 200px;
+  color: #262626; }
+
+.nosotrosParrafo::after {
+  background: #262626;
+  content: "";
+  display: block;
+  height: 1px;
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+  width: 120px; }
 
 .nosotrosCont {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   width: 100%;
   height: 400px;
@@ -365,7 +392,8 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 550px;
-  grid-template-areas: "formulario informacion"; }
+  grid-template-areas: "formulario informacion";
+  margin: 40px 0; }
   .contacto__formulario {
     grid-area: "formulario";
     width: 450px; }
@@ -388,9 +416,20 @@ p {
   .contacto__informacion {
     grid-area: "informacion";
     line-height: 2; }
-    .contacto__informacion ul {
+    .contacto__informacion .infoContacto {
       position: relative;
       top: 20px; }
+    .contacto__informacion .infoHorarios {
+      width: 350px;
+      margin-top: 60px;
+      padding: 20px;
+      border-radius: 6px;
+      background-color: #e9e9e9; }
+      .contacto__informacion .infoHorarios ul {
+        margin-top: 20px; }
+        .contacto__informacion .infoHorarios ul h3 {
+          font-weight: 700;
+          font-size: 18px; }
 
 .boton {
   color: #fff;
@@ -452,7 +491,7 @@ p {
       height: 2.720rem;
       width: 40%;
       text-indent: 1.25rem;
-      color: #fff;
+      color: #262626;
       border: none;
       border-radius: 6px;
       background-color: #fff;
@@ -642,6 +681,26 @@ p {
   .videoDeServicios iframe {
     width: 100%;
     padding: 0 20px; }
+  .nosotros {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 20px 0; }
+    .nosotros__imagen img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 40px; }
+    .nosotros__texto {
+      width: 100%; }
+      .nosotros__texto p {
+        padding: 0 20px;
+        margin: 0; }
+  .nosotrosParrafo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    padding: 20px 0;
+    margin: 40px;
+    color: #262626; }
   .nosotrosCont {
     width: 100%;
     height: 500px; }
@@ -657,10 +716,13 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 550px;
     grid-template-areas: "formulario"  "informacion";
-    padding: 20px 0; }
+    padding: 20px 0;
+    margin-top: 20px; }
     .contacto__formulario {
       grid-area: "formulario";
-      padding: 20px;
+      padding: 0 20px;
+      width: 100%; }
+    .contacto__informacion .infoHorarios {
       width: 100%; } }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -697,5 +759,33 @@ p {
       margin: 10px 0; }
   .catalogo {
     justify-content: center; }
+  .servicios {
+    justify-content: space-evenly; }
+    .servicios__descripcion {
+      margin-top: 20px; }
+  .nosotros__imagen img {
+    width: 350px; }
+  .nosotros__texto {
+    width: 45%;
+    padding: 0 20px; }
+  .nosotrosParrafo {
+    padding: 0 30px 80px 30px; }
+  .nosotrosCont {
+    width: 100%;
+    height: 400px; }
+  .nosotrosPie {
+    height: auto;
+    padding: 10px; }
+    .nosotrosPie__texto {
+      width: 50%; }
+    .nosotrosPie__imagen img {
+      width: 350px;
+      padding: 0;
+      margin-left: 20px; }
+  .contacto__formulario {
+    padding: 0 20px; }
+  .contacto__informacion .infoHorarios {
+    width: 285px;
+    padding: 20px 0; }
   .footer__arriba {
     padding: 30px; } }
