@@ -172,6 +172,7 @@
     .equipos {
         padding-top: 0;
         padding-bottom: 40px;
+        margin-top: 40px;
         margin-bottom: 40px;
 
         &__descripcion {
@@ -241,12 +242,16 @@
 
     // Seccion nosotros
     .nosotros {
-        display: flex;
-        flex-flow: row wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 1fr;
+        grid-template-areas: "nosotros__imagen"
+                            "nosotros__texto";
         align-items: center;
         margin: 20px 0;
     
         &__imagen {
+            grid-area: "nosotros__imagen";
             img {
                 width: 100%;
                 border-radius: 6px;
@@ -255,6 +260,7 @@
         }
     
         &__texto {
+            grid-area: "nosotros__texto";
             width: 100%;
     
             p {
@@ -265,21 +271,24 @@
     }
 
     .nosotrosParrafo {
-        font-family: 'Montserrat', sans-serif;
         font-size: 22px;
         padding: 20px 0;
         margin: 40px;
-        color: #262626;
     }
 
     .nosotrosCont {
         width: 100%;
-        height: 500px;
+        height: 450px;
     }
 
     .nosotrosPie {
-        flex-flow: column wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas: "nosotros__texto"
+                            "nosotros__imagen";
         padding: 10px;
+        margin: 0;
 
         &__texto {
             width: 100%;
@@ -313,7 +322,6 @@
             }
         }
     }
-
 }
 
 // Estilos para tablet
@@ -353,7 +361,7 @@
 
         &__texto {
             position: absolute;
-            left: 360px;
+            left: 390px;
             top: 0px;
             text-align: center;
             padding: 20px;
@@ -394,14 +402,15 @@
 
     // Seccion nosotros
     .nosotros {
+        align-items: center;
         &__imagen {
-                img {
-                    width: 350px;
-                }
+            img {
+                width: 350px;
+            }
         }
         &__texto {
-            width: 45%;
-            padding: 0 20px;
+            width: 350px;
+            padding: 0;
         }
     }
     
@@ -412,7 +421,7 @@
 
     .nosotrosCont {
         width: 100%;
-        height: 400px;
+        height: 325px;
     }
 
     .nosotrosPie {
@@ -420,7 +429,7 @@
         padding: 10px;
 
         &__texto {
-            width: 50%;
+            width: 100%;
         }
 
         &__imagen {
@@ -453,5 +462,4 @@
             padding: 30px;
         }
     }
-
 }

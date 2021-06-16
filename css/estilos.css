@@ -94,7 +94,7 @@ p {
   background-color: #fff;
   border: #e1e1e1 solid 1px;
   border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; }
 
 .tarjeta--destacado {
   width: 260px;
@@ -221,8 +221,12 @@ p {
 .my-float {
   margin-top: 16px; }
 
+.bannerEquipos img {
+  width: 100%;
+  border-radius: 6px; }
+
 .equipos {
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 80px;
   margin-bottom: 40px;
   border-bottom: #dfdfdf solid 1px; }
@@ -272,7 +276,7 @@ p {
   background-color: #fff;
   border: #e1e1e1 solid 1px;
   border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; }
   .menuCategorias p {
     font-weight: 600;
     margin: 0 20px 0 40px; }
@@ -333,14 +337,20 @@ p {
     border-radius: 6px; }
 
 .nosotros {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  margin: 80px 0; }
-  .nosotros__imagen img {
-    width: 500px;
-    border-radius: 6px; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  margin: 80px 0;
+  grid-template-areas: "nosotros__imagen nosotros__texto"; }
+  .nosotros__imagen {
+    grid-area: "nosotros__imagen"; }
+    .nosotros__imagen img {
+      width: 500px;
+      border-radius: 6px; }
   .nosotros__texto {
+    grid-area: "nosotros__texto";
+    align-self: center;
     width: 480px; }
     .nosotros__texto p {
       margin: 0; }
@@ -363,7 +373,6 @@ p {
 
 .nosotrosCont {
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
   width: 100%;
   height: 400px;
@@ -371,10 +380,15 @@ p {
   background-image: linear-gradient(315deg, #2a2a72 0%, #007ac3 74%); }
 
 .nosotrosPie {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  margin: 80px 0;
+  grid-template-areas: "nosotrosPie__texto nosotrosPie__imagen"; }
   .nosotrosPie__texto {
+    grid-area: "nosotrosPie__texto";
+    align-self: center;
     width: 480px;
     color: #fff; }
     .nosotrosPie__texto h2 {
@@ -383,10 +397,12 @@ p {
       color: #fff; }
     .nosotrosPie__texto p {
       color: #fff; }
-  .nosotrosPie__imagen img {
-    width: 500px;
-    border-radius: 6px;
-    align-self: center; }
+  .nosotrosPie__imagen {
+    grid-area: "nosotrosPie__imagen"; }
+    .nosotrosPie__imagen img {
+      width: 500px;
+      border-radius: 6px;
+      align-self: center; }
 
 .contacto {
   display: grid;
@@ -464,7 +480,7 @@ p {
   background-color: #fff;
   border: #e1e1e1 solid 1px;
   border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; }
 
 .tarjeta--destacado {
   width: 260px;
@@ -653,6 +669,7 @@ p {
   .equipos {
     padding-top: 0;
     padding-bottom: 40px;
+    margin-top: 40px;
     margin-bottom: 40px; }
     .equipos__descripcion p {
       margin: 0; }
@@ -682,31 +699,38 @@ p {
     width: 100%;
     padding: 0 20px; }
   .nosotros {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr;
+    grid-template-areas: "nosotros__imagen" "nosotros__texto";
     align-items: center;
     margin: 20px 0; }
-    .nosotros__imagen img {
-      width: 100%;
-      border-radius: 6px;
-      margin-bottom: 40px; }
+    .nosotros__imagen {
+      grid-area: "nosotros__imagen"; }
+      .nosotros__imagen img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 40px; }
     .nosotros__texto {
+      grid-area: "nosotros__texto";
       width: 100%; }
       .nosotros__texto p {
         padding: 0 20px;
         margin: 0; }
   .nosotrosParrafo {
-    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     padding: 20px 0;
-    margin: 40px;
-    color: #262626; }
+    margin: 40px; }
   .nosotrosCont {
     width: 100%;
-    height: 500px; }
+    height: 450px; }
   .nosotrosPie {
-    flex-flow: column wrap;
-    padding: 10px; }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "nosotros__texto" "nosotros__imagen";
+    padding: 10px;
+    margin: 0; }
     .nosotrosPie__texto {
       width: 100%; }
     .nosotrosPie__imagen img {
@@ -742,7 +766,7 @@ p {
       margin-top: 20px; }
   .descuentos__texto {
     position: absolute;
-    left: 360px;
+    left: 390px;
     top: 0px;
     text-align: center;
     padding: 20px; }
@@ -763,21 +787,23 @@ p {
     justify-content: space-evenly; }
     .servicios__descripcion {
       margin-top: 20px; }
-  .nosotros__imagen img {
-    width: 350px; }
-  .nosotros__texto {
-    width: 45%;
-    padding: 0 20px; }
+  .nosotros {
+    align-items: center; }
+    .nosotros__imagen img {
+      width: 350px; }
+    .nosotros__texto {
+      width: 350px;
+      padding: 0; }
   .nosotrosParrafo {
     padding: 0 30px 80px 30px; }
   .nosotrosCont {
     width: 100%;
-    height: 400px; }
+    height: 325px; }
   .nosotrosPie {
     height: auto;
     padding: 10px; }
     .nosotrosPie__texto {
-      width: 50%; }
+      width: 100%; }
     .nosotrosPie__imagen img {
       width: 350px;
       padding: 0;

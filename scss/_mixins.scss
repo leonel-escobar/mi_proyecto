@@ -3,7 +3,7 @@
 @mixin bordes {
     border: #e1e1e1 solid 1px;
     border-radius: 6px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 @mixin inputborde {

@@ -167,8 +167,15 @@
 }
 
 // Catálogo de productos
+.bannerEquipos {
+    img {
+        width: 100%;
+        border-radius: 6px;
+    }
+}
+
 .equipos {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 80px;
     margin-bottom: 40px;
     border-bottom: #dfdfdf solid 1px;
@@ -334,12 +341,17 @@
 
 // Seccion nosotros
 .nosotros {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    margin: 80px 0;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px;
+    margin: 80px 0; 
+    grid-template-areas: 
+    "nosotros__imagen nosotros__texto";
 
     &__imagen {
+        grid-area: "nosotros__imagen";
+        
         img {
             width: 500px;
             border-radius: 6px;
@@ -347,6 +359,8 @@
     }
 
     &__texto {
+        grid-area: "nosotros__texto";
+        align-self: center;
         width: 480px;
 
         p {
@@ -375,7 +389,6 @@
 
 .nosotrosCont {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     width: 100%;
     height: 400px;
@@ -383,11 +396,17 @@
 }
 
 .nosotrosPie {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px;
+    margin: 80px 0; 
+    grid-template-areas: 
+    "nosotrosPie__texto nosotrosPie__imagen";
 
     &__texto {
+        grid-area: "nosotrosPie__texto";
+        align-self: center;
         width: 480px;
         color: $color-blanco;
 
@@ -403,6 +422,8 @@
     }
 
     &__imagen {
+        grid-area: "nosotrosPie__imagen";
+        
         img {
             width: 500px;
             border-radius: 6px;
