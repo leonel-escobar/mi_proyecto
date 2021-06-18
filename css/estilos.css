@@ -252,6 +252,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-right: 20px;
     margin: 15px 0; }
     .catalogo__producto h3 {
       font-size: 16px;
@@ -671,6 +672,8 @@ p {
     padding-bottom: 40px;
     margin-top: 40px;
     margin-bottom: 40px; }
+    .equipos__descripcion h2 {
+      font-size: 32px; }
     .equipos__descripcion p {
       margin: 0; }
     .equipos__descripcion button {
@@ -775,6 +778,19 @@ p {
       font-size: 16px;
       font-weight: 600;
       text-align: right; }
+  .equipos {
+    position: relative;
+    flex-direction: column; }
+    .equipos__descripcion {
+      width: 100%; }
+      .equipos__descripcion p {
+        width: 50%;
+        padding-right: 30px; }
+    .equipos__imagen img {
+      position: absolute;
+      left: 48%;
+      top: 180px;
+      width: 50%; }
   .menuCategorias {
     justify-content: center; }
     .menuCategorias p {
@@ -783,6 +799,20 @@ p {
       margin: 10px 0; }
   .catalogo {
     justify-content: center; }
+    .catalogo__producto {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-right: 20px;
+      margin: 15px 0; }
+      .catalogo__producto h3 {
+        font-size: 18px;
+        font-weight: 600; }
+      .catalogo__producto p {
+        font-size: 16px; }
+      .catalogo__producto img {
+        width: 245px; }
   .servicios {
     justify-content: space-evenly; }
     .servicios__descripcion {
