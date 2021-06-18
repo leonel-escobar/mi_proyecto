@@ -231,7 +231,8 @@
 
     // Sección servicios
     .servicios{
-        
+        flex-flow: column nowrap;
+        align-items: center;
         &__descripcion:not(:last-of-type) {
             margin-bottom: 40px;
         }

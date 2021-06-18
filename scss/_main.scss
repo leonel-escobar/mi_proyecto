@@ -373,19 +373,23 @@
 .nosotrosParrafo {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
+    font-weight: 400;
     padding: 0 200px 80px 200px;
-    color: #262626;
+    p {
+        color: #262626;
+    }
 }
 
 .nosotrosParrafo::after {
     background: #262626;
     content: "";
     display: block;
-    height: 1px;
+    height: 2px;
     position: relative;
     top: 10px;
     margin: 0 auto;
     width: 120px;
+    opacity: 80%;
 }
 
 .nosotrosCont {

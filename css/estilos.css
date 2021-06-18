@@ -359,18 +359,21 @@ p {
 .nosotrosParrafo {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
-  padding: 0 200px 80px 200px;
-  color: #262626; }
+  font-weight: 400;
+  padding: 0 200px 80px 200px; }
+  .nosotrosParrafo p {
+    color: #262626; }
 
 .nosotrosParrafo::after {
   background: #262626;
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   position: relative;
   top: 10px;
   margin: 0 auto;
-  width: 120px; }
+  width: 120px;
+  opacity: 80%; }
 
 .nosotrosCont {
   display: flex;
@@ -696,8 +699,11 @@ p {
       margin-bottom: 10px; }
   .catalogo__producto img {
     width: 200px; }
-  .servicios__descripcion:not(:last-of-type) {
-    margin-bottom: 40px; }
+  .servicios {
+    flex-flow: column nowrap;
+    align-items: center; }
+    .servicios__descripcion:not(:last-of-type) {
+      margin-bottom: 40px; }
   .videoDeServicios iframe {
     width: 100%;
     padding: 0 20px; }
