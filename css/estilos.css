@@ -108,6 +108,9 @@ p {
   background-color: #111; }
   .header__nav .logo {
     width: 125px; }
+  .header__nav .navbar-nav .linkActivo {
+    font-weight: 600;
+    color: #fff; }
 
 .carousel-item img {
   height: 100vh;

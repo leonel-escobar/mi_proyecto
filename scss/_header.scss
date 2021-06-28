@@ -9,5 +9,12 @@
         .logo {
             width: 125px;
         }
+
+        .navbar-nav {
+            .linkActivo {
+                font-weight: 600;
+                color: $color-blanco;
+            }
+        }
     }
 }
